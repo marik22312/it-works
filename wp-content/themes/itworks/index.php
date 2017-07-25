@@ -1,5 +1,5 @@
 <?php
-wp_header();
+wp_head();
 echo "Coming Soon!";
 echo "test";
 
