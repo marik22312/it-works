@@ -1,7 +1,7 @@
 <?php
-wp_head();
+get_header();
 echo "Coming Soon!";
 echo "test";
 
-wp_footer();
+get_footer();
 ?>
