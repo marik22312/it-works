@@ -8,4 +8,11 @@
 
     <?php wp_head(); ?>
   </head>
-  <body>
+  <body <?php body_class(); ?>>
+    <header>
+      <nav>
+        <?php
+        wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+
+      </nav>
+    </header>
