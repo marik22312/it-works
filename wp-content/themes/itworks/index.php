@@ -1,7 +1,7 @@
 <?php
 get_header();
-echo "Coming Soon!";
-echo "test";
+?>
 
+<?php
 get_footer();
 ?>

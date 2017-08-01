@@ -1,0 +1,21 @@
+/*Color Var's*/
+header {
+  max-height: 10vh;
+}
+
+header #header-logo {
+  max-height: 10vh;
+  display: inline-block;
+}
+
+header #header-menu {
+  display: inline-block;
+}
+
+header #header-menu ul {
+  list-style: none;
+}
+
+header #header-menu ul li {
+  display: inline-block;
+}
