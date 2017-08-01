@@ -10,9 +10,11 @@
   </head>
   <body <?php body_class(); ?>>
     <header>
-      <nav>
         <?php
-        wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-
-      </nav>
+        wp_nav_menu( array(
+           'theme_location' => 'header-menu',
+           'container' => 'nav',
+           'container_class' => '',
+  	        'container_id'    => 'header-menu',)); 
+        ?>
     </header>
