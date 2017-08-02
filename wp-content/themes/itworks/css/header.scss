@@ -3,7 +3,7 @@ $purpleColor: #6c3290;
 $blueColor: #169fc3;
 
 header {
-  max-height: 10vh;
+  max-height: 30vh;
   #header-logo {
       max-height: 10vh;
       display: inline-block;
@@ -14,7 +14,24 @@ header {
       list-style: none;
       li {
         display: inline-block;
+        padding: 11px 14px;
+        &:hover {
+          border-bottom: 4px solid $purpleColor;
+          border-radius: 3px;
+        }
+        a {
+          color: black;
+          vertical-align: baseline;
+          }
+          }
+          li.current-menu-item {
+            background-color: $purpleColor;
+            border: 4px solid $purpleColor;
+            border-radius: 3px;
+            a {
+              color: white;
+            }
+          }
         }
       }
     }
-  }
