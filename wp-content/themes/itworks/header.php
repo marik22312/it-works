@@ -10,11 +10,17 @@
   </head>
   <body <?php body_class(); ?>>
     <header>
+      <!-- custom logo -->
+      <?php
+       $custom_logo_id = get_theme_mod( 'custom_logo' );
+       $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+      ?>
+        <img id="header-logo" src="<?php echo $image[0]; ?>" alt="<?php echo bloginfo('name'); ?>">
         <?php
         wp_nav_menu( array(
            'theme_location' => 'header-menu',
            'container' => 'nav',
            'container_class' => '',
-  	        'container_id'    => 'header-menu',)); 
+  	        'container_id'    => 'header-menu',));
         ?>
     </header>
