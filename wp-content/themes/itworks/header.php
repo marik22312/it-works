@@ -24,3 +24,4 @@
   	        'container_id'    => 'header-menu',));
         ?>
     </header>
+    <div id="fullpage">
