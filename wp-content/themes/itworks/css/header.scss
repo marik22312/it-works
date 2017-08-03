@@ -4,17 +4,48 @@ $blueColor: #169fc3;
 
 header {
   max-height: 30vh;
+  display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-between;
+align-content: space-between;
+align-items: flex-start;
+
   #header-logo {
-      max-height: 10vh;
+      max-height: 60px;
+      min-height: 10vh;
       display: inline-block;
+      order: 0;
+      flex: 0 1 auto;
+      align-self: flex-start;
+      padding-left: 25px;
+      margin-top: 1vh;
   }
-  #header-menu {
+  #header-menu-middle, #header-menu-side {
     display: inline-block;
+
     ul {
       list-style: none;
+      .menu-item-17{
+        order: 0;
+        flex: 0.25 1 auto;
+        align-self: flex-start;
+      }
+      .menu-item-14{
+        -webkit-order: 0;
+        -ms-flex-order: 0;
+        order: 0;
+        -webkit-flex: .25 1 auto;
+        -ms-flex: .25 1 auto;
+        flex: .25 1 auto;
+        -webkit-align-self: auto;
+        -ms-flex-item-align: auto;
+        align-self: auto;
+      }
       li {
         display: inline-block;
         padding: 11px 14px;
+        margin-top: 1vh;
         &:hover {
           border-bottom: 4px solid $purpleColor;
           border-radius: 3px;
@@ -22,7 +53,11 @@ header {
         a {
           color: black;
           vertical-align: baseline;
+          font-size: 23px;
+          &:hover{
+            text-decoration: none;
           }
+        }
           }
           li.current-menu-item {
             background-color: $purpleColor;
@@ -33,5 +68,21 @@ header {
             }
           }
         }
+      }
+    }
+    .menu-item-39 a{
+        color: $blueColor !important;
+    }
+    .menu-item-40{
+      background-color: $blueColor;
+      border-radius: 20px !important;
+      margin-right: 3vw;
+      margin-left: 2vw;
+      &:hover {
+        background-color: $purpleColor;
+        border-bottom: 0px solid black !important;
+      }
+      a {
+        color: white !important;
       }
     }
