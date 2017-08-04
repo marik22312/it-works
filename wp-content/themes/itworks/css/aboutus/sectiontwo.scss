@@ -1,0 +1,40 @@
+/*Color Var's*/
+$purpleColor: #6c3290;
+$blueColor: #169fc3;
+$fontGrey: #838788;
+
+.bluedot {
+  background-color: $blueColor;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+#index-sectionTwo{
+  #sec2_title {
+    font-size: 47px;
+    color: $blueColor;
+  }
+  #sec2_subtitle {
+    max-width: 347px;
+    font-size: 30px;
+    color: $fontGrey;
+  }
+
+  .sec2_row_cont {
+    color: $fontGrey;
+    font-size: 30px;
+  }
+
+  .sec2_row_title {
+    color: $fontGrey;
+    font-size: 45px;
+  }
+
+  $class-slug: sec2 !default;
+// padding is 80;
+  @for $i from 1 through 4 {
+    ##{$class-slug}_con#{$i}_title {
+      padding: 60px + $i*3
+    }
+    }
+}//end of sectionTwo
