@@ -1,7 +1,9 @@
 <?php
-wp_head();
-echo "Coming Soon!";
-echo "test";
+get_header();
+?>
+<section id="index-sectionTwo" class="section fp-auto-height-responsive">
 
-wp_footer();
+</section>
+<?php
+get_footer();
 ?>

@@ -19,3 +19,12 @@ wp-trackback.php
 xmlrpc.php
 wp-content/uploads
 wp-content/languages
+helpers/get_longest_common_subsequence.php
+wp-config.php
+wp-config_url.php
+#ignore lib files (bootstrap, js libraries etc.)
+wp-content/themes/itworks/lib
+wp-content/index.php
+wp-content/plugins
+wp-content/themes/index.php
+index.php

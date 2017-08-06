@@ -6,3 +6,6 @@ Version: 0.1 [20/07/2017]
 Text Domain: it_works
 tags: balck, white, resoinsive, fetured-images, custom-menu, custom-header;
 */
+
+@import "css/header.min.css";
+@import "css/aboutus/sectiontwo.min.css";
