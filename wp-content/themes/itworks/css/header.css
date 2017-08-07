@@ -30,15 +30,11 @@ header #header-menu-side ul {
   list-style: none;
 }
 
-header #header-menu-middle ul .menu-item-17,
-header #header-menu-side ul .menu-item-17 {
+header #header-menu-middle ul #header-menu-middle,
+header #header-menu-side ul #header-menu-middle {
   order: 0;
   flex: 0.25 1 auto;
   align-self: flex-start;
-}
-
-header #header-menu-middle ul .menu-item-14,
-header #header-menu-side ul .menu-item-14 {
   -webkit-order: 0;
   -ms-flex-order: 0;
   order: 0;
@@ -55,7 +51,7 @@ header #header-menu-side ul li {
   display: inline-block;
   padding: 11px 14px;
   margin-top: 1vh;
-  padding-top: 15px;
+  border-bottom: 4px solid #FFFFFF;
 }
 
 header #header-menu-middle ul li:hover,
@@ -67,7 +63,7 @@ header #header-menu-side ul li:hover {
 header #header-menu-middle ul li a,
 header #header-menu-side ul li a {
   color: black;
-  display: block;
+  vertical-align: baseline;
   font-size: 23px;
 }
 
@@ -88,22 +84,84 @@ header #header-menu-side ul li.current-menu-item a {
   color: white;
 }
 
-.menu-item-39 a {
+#menu-side-menu li a {
   color: #169fc3 !important;
 }
 
-.menu-item-40 {
+#menu-side-menu li:last-child {
   background-color: #169fc3;
   border-radius: 20px !important;
   margin-right: 3vw;
   margin-left: 2vw;
 }
 
-.menu-item-40:hover {
+#menu-side-menu li:last-child:hover {
   background-color: #6c3290;
   border-bottom: 0 solid black !important;
 }
 
-.menu-item-40 a {
+#menu-side-menu li:last-child a {
   color: white !important;
+}
+
+#section3 {
+  position: relative;
+  width: 100vw;
+}
+
+#section3 .about_section3_top {
+  max-width: 100vw;
+  max-height: 70vh;
+}
+
+#section3 .about_section3_top .about_section3_text {
+  width: 50vw;
+  height: 70vh;
+  display: inline-block;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #E6E7E9;
+  font-size: 19px;
+  font-style: italic;
+  color: #6c3290;
+}
+
+#section3 .about_section3_top .about_section3_img {
+  width: 50vw;
+  min-height: 70vh;
+  max-height: 70vh;
+  float: right;
+  height: auto;
+}
+
+#section3 .about_section3_top #about_section3_logo {
+  width: 30vh;
+  vertical-align: baseline;
+  position: absolute;
+  bottom: 30vh;
+  margin-left: -5%;
+}
+
+#section3 .about_section3_top .about_section3_link {
+  text-align: center;
+  color: black;
+}
+
+#section3 .about_section3_bottom {
+  height: 30vh;
+  width: 100vw;
+  text-align: center;
+}
+
+#section3 .about_section3_bottom .about_section3_contact {
+  width: 20vw;
+  margin-top: 20px;
+  display: inline;
+}
+
+#section3 .about_section3_bottom .about_section3_sentence {
+  font-size: 72px;
+  font-style: italic;
+  font-weight: bold;
 }
