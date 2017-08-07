@@ -29,13 +29,10 @@ header {
     ul {
       list-style: none;
 
-      .menu-item-17 {
+      #header-menu-middle {
         order: 0;
         flex: 0.25 1 auto;
-        align-self: flex-start;
-      }
-
-      .menu-item-14 {
+        align-self: flex-start;    
         -webkit-order: 0;
         -ms-flex-order: 0;
         order: 0;
@@ -61,7 +58,7 @@ header {
           color: black;
           vertical-align: baseline;
           font-size: 23px;
-          
+
           &:hover {
             text-decoration: none;
           }
@@ -98,5 +95,59 @@ header {
 
   a {
     color: white !important;
+  }
+}
+
+#section3{
+position: relative;
+width: 100vw;
+  .about_section3_top{
+    max-width: 100vw;
+    max-height: 70vh;
+  .about_section3_text{
+    width: 50vw;
+    height: 70vh;
+    display: inline-block;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #E6E7E9;
+    font-size: 19px;
+    font-style: italic;
+    color: $purpleColor;
+  }
+  .about_section3_img{
+    width: 50vw;
+    min-height: 70vh;
+    max-height: 70vh;
+    float: right;
+    height: auto;
+  }
+  #about_section3_logo{
+    width: 30vh;
+    vertical-align: baseline;
+    position: absolute;
+    bottom: 30vh;
+    margin-left: -5%;
+  }
+  .about_section3_link{
+    text-align: center;
+    color: black;
+  }
+}
+  .about_section3_bottom{
+    height: 30vh;
+    width: 100vw;
+    text-align: center;
+    .about_section3_contact{
+      width: 20vw;
+      margin-top: 20px;
+      display: inline;
+    }
+    .about_section3_sentence{
+      font-size: 72px;
+      font-style: italic;
+      font-weight: bold;
+    }
   }
 }
