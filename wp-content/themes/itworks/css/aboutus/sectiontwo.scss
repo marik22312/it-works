@@ -32,9 +32,10 @@ $fontGrey: #838788;
 
   $class-slug: sec2 !default;
 // padding is 80;
+  $sec2-padding: 80px;
   @for $i from 1 through 4 {
     ##{$class-slug}_con#{$i}_title {
-      padding: 60px + $i*3
+      padding: $sec2-padding*$i;
     }
     }
 }//end of sectionTwo
