@@ -20,13 +20,17 @@
     <div id="sec2_subtitle">
       <?php the_field('sec2_subtitle'); ?>
     </div>
-    <div id="about-sec2-dot" class="bluedot"></div>
-    <div id="sec2_con1_title" class="sec2_row_title">
-      <?php the_field('sec2_con1_title'); ?>
-    </div>
-    <div id="sec2_con1_cont" class="sec2_row_cont">
-      <?php the_field('sec2_con1_cont'); ?>
-    </div>
+    <?php for ($i=1; $i <= 4; $i++) : ?>
+      <div class="ab-sec2-con<?php echo $i; ?>-container">
+        <div class="bluedot"></div>
+        <div id="sec2_con<?php echo $i; ?>_title" class="sec2_row_title">
+          <?php the_field('sec2_con'.$i.'_title'); ?>
+        </div>
+        <div id="sec2_con<?php echo $i; ?>_cont" class="sec2_row_cont">
+          <?php the_field('sec2_con'.$i.'_cont'); ?>
+        </div>
+      </div>
+    <?php endfor; ?>
   <?php endwhile; else: ?>
     <?php echo "ERROR" ?>
   <?php endif; ?>
