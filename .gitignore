@@ -17,6 +17,8 @@ wp-settings.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
+wp-content/uploads
+wp-content/languages
 helpers/get_longest_common_subsequence.php
 wp-config.php
 wp-config_url.php
