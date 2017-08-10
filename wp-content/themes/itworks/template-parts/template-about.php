@@ -11,28 +11,35 @@
 
   if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<section id="index-sectionTwo" class="row">
-  <div class="container-fluid">
+<section id="ab-sectionTwo" class="row">
+  <div class="col-md-8 col-md-offset-2" id="in-sec2-cont">
+    <div id="sec2-title-cont">
+      <div id="sec2_title">
+        <?php the_field('sec2_title'); ?>
+      </div>
+      <div id="sec2_subtitle">
+        <?php the_field('sec2_subtitle'); ?>
+      </div>
+    </div>
 
-    <div id="sec2_title">
-      <?php the_field('sec2_title'); ?>
-    </div>
-    <div id="sec2_subtitle">
-      <?php the_field('sec2_subtitle'); ?>
-    </div>
+    <div id="sec2-rows-container">
     <?php for ($i=1; $i <= 4; $i++) : ?>
-      <div class="ab-sec2-con<?php echo $i; ?>-container">
+      <div id="sec2-con<?php echo $i; ?>-container">
         <div class="bluedot"></div>
-        <div id="sec2_con<?php echo $i; ?>_title" class="sec2_row_title">
+        <div id="sec2-con<?php echo $i; ?>-text">
+        <div id="sec2-con<?php echo $i; ?>-title" class="sec2-row-title">
           <?php the_field('sec2_con'.$i.'_title'); ?>
         </div>
-        <div id="sec2_con<?php echo $i; ?>_cont" class="sec2_row_cont">
+        <div id="sec2_con<?php echo $i; ?>-cont" class="sec2-row-cont">
           <?php the_field('sec2_con'.$i.'_cont'); ?>
         </div>
       </div>
+      </div>
     <?php endfor; ?>
+      </div>
+
   <?php endwhile; else: ?>
-    <?php echo "ERROR" ?>
+    <?php echo "Nם Error Code Defined" ?>
   <?php endif; ?>
 
   </div>
