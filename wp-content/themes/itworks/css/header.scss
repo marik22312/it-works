@@ -1,7 +1,9 @@
 /*Color Var's*/
 $purpleColor: #6c3290;
 $blueColor: #169fc3;
-
+body{
+  overflow-x: hidden;
+}
 header {
   max-height: 30vh;
   display: flex;

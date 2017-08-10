@@ -7,16 +7,16 @@ get_header();
 ?>
            	<section class="section" id="section1">
 		<div class="section1-text">
-			
-				<p class="first-line">Advancing disadvantaged young adults<br>
+
+				<p class="first-line">Advancing disadvantaged young adults
 				to work in the industry</p>
 				<p class="second-line">It works US aims at advancing disadvantaged<br>young adults living in remote areas</p>
-			
+
 				<center>
 				<button type="button" class="btn btn-info" style="border-radius: 25px;" ><p>Contact us please</button>
 				</center>
 		</div>
-			
+
 	</section>
 <section class="section" id="section3">
   <div class="about_section3_top">
@@ -27,8 +27,9 @@ get_header();
     <br /> <span class="about_section3_link">http://www.en.itworks.org.il</span>
     <img id="about_section3_logo" src="<?php echo $image[0]; ?>" alt="<?php echo bloginfo('name'); ?>">
 </P>
+
 <img src="<?php echo get_template_directory_uri(); ?>/images/sini.jpg" class="about_section3_img" />
-  </div>
+</div>
 <div class="about_section3_bottom">
 
 <img src="<?php echo get_template_directory_uri(); ?>/images/contact.jpg" class="about_section3_contact" />
@@ -40,4 +41,3 @@ get_header();
 <?php
 get_footer();
 ?>
-

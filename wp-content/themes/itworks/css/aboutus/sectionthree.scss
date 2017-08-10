@@ -34,6 +34,7 @@ width: 100vw;
     position: absolute;
     bottom: 30vh;
     margin-left: -5%;
+    height: auto;
   }
   .about_section3_link{
     text-align: center;
@@ -46,8 +47,10 @@ width: 100vw;
     text-align: center;
     .about_section3_contact{
       width: 20vw;
-      margin-top: 20px;
+      margin-top: 40px;
       display: inline;
+      height: auto;
+      margin-bottom: 40px;
     }
     .about_section3_sentence{
       font-size: 72px;

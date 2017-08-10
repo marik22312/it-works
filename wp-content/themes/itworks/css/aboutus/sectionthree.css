@@ -36,6 +36,7 @@
   position: absolute;
   bottom: 30vh;
   margin-left: -5%;
+  height: auto;
 }
 
 #section3 .about_section3_top .about_section3_link {
@@ -51,8 +52,10 @@
 
 #section3 .about_section3_bottom .about_section3_contact {
   width: 20vw;
-  margin-top: 20px;
+  margin-top: 40px;
   display: inline;
+  height: auto;
+  margin-bottom: 40px;
 }
 
 #section3 .about_section3_bottom .about_section3_sentence {

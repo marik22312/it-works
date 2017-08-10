@@ -1,4 +1,8 @@
 /*Color Var's*/
+body {
+  overflow-x: hidden;
+}
+
 header {
   max-height: 30vh;
   display: flex;
