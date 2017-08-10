@@ -11,12 +11,12 @@
 
   $custom_logo_id = get_theme_mod( 'custom_logo' );
   $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+
   if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
  <section class="row" id="section1">
 	<div class="section1-text">
-		<p class="first-line">Advancing disadvantaged young adults<br>
-		to work in the industry</p>
-		<p class="second-line">It works US aims at advancing disadvantaged<br>young adults living in remote areas</p>
+    <h1 class="first-line"><?php the_field('sec1_title'); ?></h1>
+		<p class="second-line"><?php the_field('sec1_subtitle'); ?></p>
 		<center>
 			<button type="button" class="btn btn-info" style="border-radius: 25px;" ><p>Contact us please</button>
 		</center>
