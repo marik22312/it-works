@@ -1,7 +1,7 @@
 (function($) {
 
 $(document).ready(function() {
-// $('#fullpage').fullpage();
+ // $('#fullpage').fullpage();
 console.log('All loaded up!!');
 });
 

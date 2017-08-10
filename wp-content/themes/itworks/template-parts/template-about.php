@@ -9,8 +9,10 @@
 
 <?php get_header();
 
+  $custom_logo_id = get_theme_mod( 'custom_logo' );
+  $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
   if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
- <section class="section" id="section1">
+ <section class="row" id="section1">
 	<div class="section1-text">
 		<p class="first-line">Advancing disadvantaged young adults<br>
 		to work in the industry</p>
@@ -18,7 +20,7 @@
 		<center>
 			<button type="button" class="btn btn-info" style="border-radius: 25px;" ><p>Contact us please</button>
 		</center>
-	</div>	
+	</div>
 </section>
 <section id="ab-sectionTwo" class="row">
   <div class="col-md-8 col-md-offset-2" id="in-sec2-cont">
@@ -48,7 +50,7 @@
       </div>
   </div>
  </section>
- <section class="section" id="section3">
+ <section class="row" id="section3">
    <div class="about_section3_top">
  <P class="about_section3_text">
    It Works US aims at advancing disadvantaged young adults living in remote areas by providing them with the skills, practical work experience, networking and physical space to work in the tech industry.
@@ -71,4 +73,3 @@
     <?php echo "Nם Error Code Defined" ?>
   <?php endif; ?>
 <?php get_footer(); ?>
-
