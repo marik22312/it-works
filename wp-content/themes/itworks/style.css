@@ -1,14 +1,17 @@
 /*
 Theme Name: IT Works
-Author:  Asaf Hadad, Marik Shnitman
+Author:  Asaf Hadad, Marik Shnitman, Omri Du-Nour
 Description: IT-Works US Theme for wordpress
 Version: 0.1 [20/07/2017]
 Text Domain: it_works
 tags: balck, white, responsive, fetured-images, custom-menu, custom-header;
 */
 
+
 @import "./css/header.min.css";
 @import "./css/aboutus/sectiontwo.css";
 @import "./css/services.css";
 @import "./css/aboutus/sectionthree.css";
 @import "./css/aboutus/section1.css"
+@import "css/aboutus/sectiontwo.min.css";
+

@@ -1,3 +1,61 @@
-#index-sectionTwo {
+/*Color Var's*/
+$purpleColor: #6c3290;
+$blueColor: #169fc3;
+$fontGrey: #838788;
 
+.bluedot {
+  background-color: $blueColor;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: inline-block;
 }
+#ab-sectionTwo{
+  #sec2_title {
+    font-size: 47px;
+    color: $blueColor;
+    vertical-align: top;
+  }
+  #in-sec2-cont {position: relative;}
+  #sec2-title-cont{display: inline-block;position: absolute;}
+  #sec2_subtitle {
+    max-width: 347px;
+    font-size: 30px;
+    color: $fontGrey;
+    display: inline-block;
+  }
+ #sec2-rows-container {
+   position: absolute;
+ }
+   .sec2-row-title {
+     color: $fontGrey;
+     font-size: 20px;
+     vertical-align: top;
+     text-transform: uppercase;
+   }
+
+  .sec2-row-cont {
+    color: $fontGrey;
+    font-size: 20px;
+  }
+
+}//end of sectionTwo
+
+
+  $class-slug: sec2 !default;
+// padding is 80;
+  $sec2-padding: 510px;
+  $sec2-init-width: 360px;
+  @for $i from 1 through 4 {
+    ##{$class-slug}-con#{$i}-container {
+      @if $i == 1 {margin-left: $sec2-padding;}
+      @else {margin-left: $sec2-padding - 170 *($i - 1);}
+      margin-top: 50px;
+    }
+    ##{$class-slug}-con#{$i}-text {
+      @if $i == 1 {max-width: $sec2-init-width;}
+      @else {max-width: $sec2-init-width + 170 *($i - 1);}
+      vertical-align: top;
+      display: inline-block;
+    }
+  }//end of sec-2 for loop
