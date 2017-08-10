@@ -18,9 +18,16 @@
         <img id="header-logo" src="<?php echo $image[0]; ?>" alt="<?php echo bloginfo('name'); ?>">
         <?php
         wp_nav_menu( array(
-           'theme_location' => 'header-menu',
+           'theme_location' => 'header-menu-middle',
            'container' => 'nav',
            'container_class' => '',
-  	        'container_id'    => 'header-menu',));
+  	        'container_id'    => 'header-menu-middle',));
+
+        wp_nav_menu( array(
+           'theme_location' => 'header-menu-side',
+           'container' => 'nav',
+           'container_class' => '',
+            'container_id'    => 'header-menu-side',));
         ?>
     </header>
+    <div id="fullpage">
