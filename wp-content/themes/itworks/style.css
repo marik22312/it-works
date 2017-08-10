@@ -8,6 +8,6 @@ tags: balck, white, resoinsive, fetured-images, custom-menu, custom-header;
 */
 
 @import "./css/header.min.css";
-@import "section1.css";
-@import "services.css";
+@import "./css/section1.css";
+@import "./css/services.css";
 

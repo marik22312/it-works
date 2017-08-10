@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<section class="section" id="section1" style="background-image: url('/section1-bg.png');">
+	<section class="section" id="section1" style="background-image: url('../images/section1-bg.png');">
 		<div class="section1-text">
 			<p class="first-line">Advancing disadvantaged young adults<br>
 			to work in the industry</p>
