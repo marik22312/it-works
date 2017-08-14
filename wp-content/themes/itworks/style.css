@@ -8,7 +8,14 @@ tags: balck, white, responsive, fetured-images, custom-menu, custom-header;
 */
 
 @import "./css/header.min.css";
+<<<<<<< HEAD
 @import "./css/aboutus/sectiontwo.css";
 @import "./css/services.css";
 @import "./css/aboutus/sectionthree.css";
 @import "./css/aboutus/section1.css";
+=======
+@import "./css/section1.css";
+@import "./css/services.css";
+@import "./css/program.css";
+
+>>>>>>> 802466a013b9be4af3f348cd1baf9ebda08d0373
