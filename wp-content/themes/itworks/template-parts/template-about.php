@@ -1,4 +1,4 @@
-<?php
+<?php get_header();
 /**
  * Template Name: About
  *
@@ -44,3 +44,4 @@
  <span class="about_section3_sentence">this is the best place ever wow amazing.</span>
  </div>
  </section>
+ <?php get_footer(); ?>
