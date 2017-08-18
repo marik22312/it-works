@@ -4,6 +4,7 @@
 	font-weight: bold;
 	display: block;
 	margin-left: 10px;
+	text-align: center;
 
 }
 .section2-subheadline-1{
@@ -12,4 +13,13 @@
 	font-weight: bold;
 	display: block;
 	margin-left: 10px;
+}
+.under-photo-background{
+	background-color: #cc00ff;
+}
+hr{
+	font-color: white;
+}
+p read-more{
+	font-style: italic;
 }
