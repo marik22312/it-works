@@ -35,9 +35,76 @@ get_header();
 </div>
 <a class="col-lg-2 col-lg-offset-5 index_section2_bottom">Read More >></a>
 </div>
-<div id="index_section3">
 
+<section id="section3">
+	<h2 class="headline">How we can help</h2>
+	<div class="row">
+    <div class="col-lg-10 col-lg-offset-1">
+      <div class="row index_section3_row">
+		<div class=" col-lg-4 index_section3_div">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/web.png" class="index_section3_image">
+			<p class="section3_under-photo">Web design and devalopment</p>
+			<p class="section3_paragraph">is simply dummy text of
+			 the printing<br>
+			 and typesetting industry.<br>
+			 Lorem Ipsum has been the industry's</p>
+		</div>
+
+		<div class="col-lg-4 index_section3_div">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/content.png" class="index_section3_image">
+			<p class="section3_under-photo">Content management system (CMS)</p>
+			<p class="section3_paragraph">is simply dummy text of
+			 the printing<br>
+			 and typesetting industry.<br>
+			 Lorem Ipsum has been the industry's</p>
+		</div>
+
+		<div class="col-lg-4 index_section3_div">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/custom.png" class="index_section3_image">
+			<p class="section3_under-photo">Custom application</p>
+			<p class="section3_paragraph">is simply dummy text of
+			 the printing<br>
+			 and typesetting industry.<br>
+			 Lorem Ipsum has been the industry's</p>
+		</div>
+	</div>
+      </div>
+            </div>
+	<div class="row">
+    <div class="col-lg-10 col-lg-offset-1">
+      <div class="row index_section3_row">
+		<div class="col-lg-4 index_section3_div">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/search.png" class="index_section3_image">
+			<p class="section3_under-photo">Search engine optimization</p>
+			<p class="section3_paragraph">is simply dummy text of
+			 the printing<br>
+			 and typesetting industry.<br>
+			 Lorem Ipsum has been the industry's</p>
+		</div>
+
+		<div class="col-lg-4 index_section3_div">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/e-commerce.png" class="index_section3_image">
+			<p class="section3_under-photo">e-commerce</p>
+			<p class="section3_paragraph">is simply dummy text of
+			 the printing<br>
+			 and typesetting industry.<br>
+			 Lorem Ipsum has been the industry's</p>
+		</div>
+
+		<div class="col-lg-4 index_section3_div">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/responsive.png" class="index_section3_image">
+			<p class="section3_under-photo">Responsive design</p>
+			<p class="section3_paragraph">is simply dummy text of
+			 the printing<br>
+			 and typesetting industry.<br>
+			 Lorem Ipsum has been the industry's</p>
+		</div>
+	</div>
 </div>
+</div>
+  <p class="index_section3_bottom"> Read More>></p>
+	</section>
+
 <div id="index_section4">
 
 </div>

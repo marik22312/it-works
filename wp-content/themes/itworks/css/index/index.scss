@@ -73,3 +73,41 @@ $blueColor: #169fc3;
     margin-top: 40px;
   }
 }
+#section3{
+  width: 100vw;
+  height: 100vh;
+  .headline{
+    display: block;
+    margin: 40px;
+  }
+  .index_section3_div{
+    display: inline-block;
+    vertical-align: top;
+    .index_section3_image{
+      height:120px;
+      width: auto;
+      display: block;
+      margin: auto;
+    }
+  }
+  .index_section3_row{
+    margin-bottom: 40px;
+  }
+  .index_section3_bottom{
+    color: #5bc9e4;
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+  }
+  .section3_under-photo{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+  }
+  .section3_paragraph{
+    font-size: 17px;
+    font-style: italic;
+    text-align: center;
+  }
+}
