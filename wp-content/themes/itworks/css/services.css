@@ -19,19 +19,13 @@ img{
 	text-align: center;
 }
 .under-photo{
-	font-size: 29px;
+	font-size: 18px;
 	font-style: italic;
 	font-weight:  bold;
 }
 .paragraph{
-	font-size: 29px;
+	font-size: 18px;
 	font-style: italic;
-}
-#services-section2 p{
-	font-size: 72px;
-	font-style: italic;
-	font-weight: bold;
-	display: block;
-	text-align: center;
+
 }
 /* git test comment */
