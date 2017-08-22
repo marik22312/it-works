@@ -1,4 +1,4 @@
-<?php
+<?php get_header();
 /**
  * Template Name: About
  * @package WordPress
@@ -69,7 +69,5 @@
  <span class="about_section3_sentence">this is the best place ever wow amazing.</span>
  </div>
  </section>
-  <?php endwhile; else: ?>
-    <?php echo "Nם Error Code Defined" ?>
-  <?php endif; ?>
-<?php get_footer(); ?>
+
+ <?php get_footer(); ?>

@@ -30,4 +30,4 @@
             'container_id'    => 'header-menu-side',));
         ?>
     </header>
-    <div id="fullpage">
+    <div class="container-fluid">
