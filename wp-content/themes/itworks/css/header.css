@@ -45,7 +45,7 @@ header #header-menu ul li:last-child:hover {
   background-color: #76ddf5 !important;
   border: none !important;
   border-radius: 100px !important;
-  color: #000000 !important;
+  color: #000000;
 }
 
 header #header-menu ul li:hover {
@@ -87,5 +87,5 @@ header #header-menu ul li.current-menu-item:last-child:hover {
   background-color: #76ddf5 !important;
   border: none !important;
   border-radius: 100px !important;
-  color: #000000 !important;
+  color: #000000;
 }
