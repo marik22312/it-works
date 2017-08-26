@@ -6,7 +6,6 @@
  * @subpackage it_works
  * @since It Works 1.0
  */
-get_footer();
 ?>
 <section class="row" id="services-section1">
 	<p class="headline">It works US provides top notch services in the areas of:</p>
@@ -70,3 +69,4 @@ get_footer();
 		and its' partners.
 	</p>
 </section>
+<?php get_footer(); ?>

@@ -11,4 +11,6 @@ tags: balck, white, responsive, fetured-images, custom-menu, custom-header;
 @import "./css/aboutus/sectiontwo.css";
 @import "./css/aboutus/sectionthree.css";
 @import "./css/aboutus/section1.css";
-@import "./css/index/index.css"
+@import "./css/index/index.css";
+@import "./css/footer/footer.css";
+.row {margin:0;}

@@ -1,4 +1,4 @@
-<?php get_header();
+<?php
 /**
  * Template Name: About
  * @package WordPress
@@ -7,67 +7,42 @@
  */
  ?>
 
-<?php get_header();
+<?php get_header(); ?>
 
-  $custom_logo_id = get_theme_mod( 'custom_logo' );
-  $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-
-  if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
- <section class="row" id="section1">
-	<div class="section1-text">
-    <h1 class="first-line"><?php the_field('sec1_title'); ?></h1>
-		<p class="second-line"><?php the_field('sec1_subtitle'); ?></p>
-		<center>
-			<button type="button" class="btn btn-info" style="border-radius: 25px;" ><p>Contact us please</button>
-		</center>
-	</div>
-</section>
-<section id="ab-sectionTwo" class="row">
-  <div class="col-md-8 col-md-offset-2" id="in-sec2-cont">
-    <div id="sec2-title-cont">
-      <div id="sec2_title">
-        <?php the_field('sec2_title'); ?>
-      </div>
-      <div id="sec2_subtitle">
-        <?php the_field('sec2_subtitle'); ?>
-      </div>
+   <section id="about_section1">
+    <img src="http://localhost/itworks/wp-content/themes/itworks/images/sini.jpg" alt="about_section1_img" class="about_section1_img">
+    <div class="about_section1_text">
+ 				<h1 class="about_section1_title">about us</h1>
+ 				<h3 class="about_section1_second_line">It works US aims at advancing disadvantaged young adults living in remote areas</h3>
     </div>
+ 	</section>
 
-    <div id="sec2-rows-container">
-    <?php for ($i=1; $i <= 4; $i++) : ?>
-      <div id="sec2-con<?php echo $i; ?>-container">
-        <div class="bluedot"></div>
-        <div id="sec2-con<?php echo $i; ?>-text">
-        <div id="sec2-con<?php echo $i; ?>-title" class="sec2-row-title">
-          <?php the_field('sec2_con'.$i.'_title'); ?>
-        </div>
-        <div id="sec2_con<?php echo $i; ?>-cont" class="sec2-row-cont">
-          <?php the_field('sec2_con'.$i.'_cont'); ?>
-        </div>
-      </div>
-      </div>
-    <?php endfor; ?>
-      </div>
+  <div id="about_section2">
+  <h2 class="about_section2_headline">ABOUT US</h2>
+  <div class="row">
+    <div class="about_section2_left_text col-lg-offset-2 col-lg-5">
+      <div class="row">
+  <div class="about_section2_top_text">
+    <span class="about_section2_text_number col-lg-1">1/</span>
+    <p class="col-lg-9">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+  </p>
   </div>
- </section>
- <section class="row" id="section3">
-   <div class="about_section3_top">
- <P class="about_section3_text">
-   It Works US aims at advancing disadvantaged young adults living in remote areas by providing them with the skills, practical work experience, networking and physical space to work in the tech industry.
-
-   It Works US strives to empower our fellows, young women and men, to achieve professional and personal growth, become self- sufficient and leaders in their own communities and strengthen their communities from within.
-     <br /> <span class="about_section3_link">http://www.en.itworks.org.il</span>
-     <img id="about_section3_logo" src="<?php echo $image[0]; ?>" alt="<?php echo bloginfo('name'); ?>">
- </P>
-
- <img src="<?php echo get_template_directory_uri(); ?>/images/sini.jpg" class="about_section3_img" />
- </div>
- <div class="about_section3_bottom">
-
- <img src="<?php echo get_template_directory_uri(); ?>/images/contact.jpg" class="about_section3_contact" />
- <br />
- <span class="about_section3_sentence">this is the best place ever wow amazing.</span>
- </div>
- </section>
+  </div>
+  <div class="row">
+  <div class="about_section2_bottom_text">
+    <span class="about_section2_text_number col-lg-1">2/</span>
+    <p class="col-lg-9">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+  </p>
+  </div>
+    </div>
+    </div>
+    <div class="col-lg-3">
+    <img src="http://localhost/itworks/wp-content/themes/itworks\images\index\friends.png" alt="friends" class="about_section2_img">
+    </div>
+  </div>
+  <a class="index_section2_bottom">Read More >></a>
+  </div>
 
  <?php get_footer(); ?>
