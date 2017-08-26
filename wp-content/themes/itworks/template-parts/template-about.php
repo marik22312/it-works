@@ -1,4 +1,4 @@
-<?php get_header();
+<?php
 /**
  * Template Name: About
  * @package WordPress
@@ -7,12 +7,7 @@
  */
  ?>
 
-<?php get_header();
-
-  $custom_logo_id = get_theme_mod( 'custom_logo' );
-  $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-
-  if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php get_header(); ?>
 
    <section id="about_section1">
     <img src="http://localhost/itworks/wp-content/themes/itworks/images/sini.jpg" alt="about_section1_img" class="about_section1_img">
