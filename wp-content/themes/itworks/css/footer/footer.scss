@@ -1,0 +1,86 @@
+$BlueberrySlushLT: #76ddf5;
+$BlueberrySlushDrk: #1bc7ef;
+$footerBg: #231f20;
+
+footer {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: $footerBg;
+  font-size: 14px;
+    h6 {
+      color: $BlueberrySlushDrk !important;
+      font-size: 15px !important;
+      font-weight: bold !important;
+    }
+    #footer-header{
+      text-transform: uppercase;
+      border-bottom: 1px solid white;
+      text-align: center;
+      font-weight: bold;
+    }
+    #footer-right-section{font-family: 'Open Sans', sans-serif;}
+    #footer-left-section{
+      #footer-contact{
+        .mailpoet_paragraph {
+          display: inline-block;
+          input {
+            background-color: $footerBg;
+            border: 1px solid white;
+            border-radius: 0;
+            padding: 6px 12px;
+            color: white;
+        }
+        .mailpoet_submit{
+          background-color: white;
+          color: $BlueberrySlushLT;
+          border-radius: 0;
+          font-weight: bold;
+          text-transform: uppercase;
+          &:hover{
+            color: #ffffff;
+            background-color: $BlueberrySlushDrk;
+            border-color: $BlueberrySlushDrk;
+          }
+        }
+      }
+    }
+    #footer-social{
+      text-transform: capitalize;
+      font-size: 45px;
+      a {
+        text-decoration: none;
+        color: white;
+        &:visited {color: white; text-decoration: none;}
+        &:hover{
+          cursor: pointer;
+          color: $BlueberrySlushDrk;
+        }
+      }
+    }
+  }
+  #footer-bottom-section{
+    border-bottom: 1px solid white;
+    margin-bottom: auto;
+    #ft-btn{
+      text-transform: uppercase;
+      padding: 5px 10px;
+      font-weight: 600;
+      font-size: 1.2em;
+      text-align: center;
+      display: inline-block;
+      color: $BlueberrySlushLT;
+      background-color: #ffffff;
+      border-radius: 100px;
+      &:hover {
+        color: #ffffff;
+        background-color: $BlueberrySlushDrk;
+      }
+    }
+  }
+  #ft-copyright{
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 10px;
+    p{margin: 0;}
+  }
+}
