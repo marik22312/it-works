@@ -16,6 +16,7 @@ footer #footer-header {
   border-bottom: 1px solid white;
   text-align: center;
   font-weight: bold;
+  padding: 25px 0 10px 0;
 }
 
 footer #footer-right-section {
