@@ -1,19 +1,16 @@
-<?php get_header();
+<?php
 /**
  * Template Name: About
- *
  * @package WordPress
  * @subpackage it_works
  * @since It Works 1.0
  */
  ?>
 
- <?php
-  $custom_logo_id = get_theme_mod( 'custom_logo' );
-  $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
- ?>
-  <section id="about_section1">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/sini.jpg" alt="about_section1_img" class="about_section1_img">
+<?php get_header(); ?>
+
+   <section id="about_section1">
+    <img src="http://localhost/itworks/wp-content/themes/itworks/images/sini.jpg" alt="about_section1_img" class="about_section1_img">
     <div class="about_section1_text">
  				<h1 class="about_section1_title">about us</h1>
  				<h3 class="about_section1_second_line">It works US aims at advancing disadvantaged young adults living in remote areas</h3>
@@ -42,7 +39,7 @@
     </div>
     </div>
     <div class="col-lg-3">
-    <img src="<?php echo get_template_directory_uri(); ?>\images\index\friends.png" alt="friends" class="about_section2_img">
+    <img src="http://localhost/itworks/wp-content/themes/itworks\images\index\friends.png" alt="friends" class="about_section2_img">
     </div>
   </div>
   <a class="index_section2_bottom">Read More >></a>

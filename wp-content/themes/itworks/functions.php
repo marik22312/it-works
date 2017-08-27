@@ -9,8 +9,7 @@ require get_template_directory() . '/functions_url-token.php';
 function register_topMenu(){
   register_nav_menus(
     array(
-      'header-menu-middle' => __( 'Header Menu Middle' ),
-      'header-menu-side' => __( 'Header Menu Side' )
+      'header-menu' => __( 'Header Menu' )
     )
   );
 }

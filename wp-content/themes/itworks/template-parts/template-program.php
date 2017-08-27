@@ -6,7 +6,6 @@
  * @subpackage it_works
  * @since It Works 1.0
  */
-get_footer();
 ?>
 
 <section class="row" id="program-section1">
@@ -29,9 +28,10 @@ get_footer();
 		<p class="under-photo">Job preparation curriculum</p>
 		<img src="<?php echo get_template_directory_uri(); ?>/images/social.png" class="image">
 		<p class="under-photo">Social responsibility and community involvement activities</p>
-		
+
 	</div>
 </section>
 <section class="row" id="program-section3">
-	
+
 </section>
+<?php get_footer(); ?>

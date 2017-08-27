@@ -9,25 +9,19 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <header>
+        <div class="container-fluid">
+    <header class="row">
       <!-- custom logo -->
       <?php
        $custom_logo_id = get_theme_mod( 'custom_logo' );
        $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-      ?>
-        <img id="header-logo" src="<?php echo $image[0]; ?>" alt="<?php echo bloginfo('name'); ?>">
+      ?><a href="<?php echo site_url(); ?>">
+        <img id="header-logo" src="<?php echo $image[0]; ?>" alt="<?php echo bloginfo('name'); ?>" title="<?php echo bloginfo('name'); ?>">
+        </a>
         <?php
         wp_nav_menu( array(
-           'theme_location' => 'header-menu-middle',
+           'theme_location' => 'header-menu',
            'container' => 'nav',
            'container_class' => '',
-  	        'container_id'    => 'header-menu-middle',));
-
-        wp_nav_menu( array(
-           'theme_location' => 'header-menu-side',
-           'container' => 'nav',
-           'container_class' => '',
-            'container_id'    => 'header-menu-side',));
-        ?>
+  	        'container_id'    => 'header-menu',)); ?>
     </header>
-    <div class="container-fluid">
