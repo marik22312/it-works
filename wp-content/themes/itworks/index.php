@@ -5,12 +5,13 @@ get_header();
 <!-- section1 -->
 
 <div id="index_section1">
+  <img src="http://localhost/itworks/wp-content/themes/itworks/images/index/index_main_image.jpg" alt="index_section1_img" class="index_section1_img">
+  <div class="index_section1_text">
 <span class="index_section1_top_text">it works us offers world-class web services to global customers, leveraging freelance portals and online work</span>
 <span class="index_section1_bottom_text">It Works US aims at advancing disadvantaged young adults living in remote areas</span>
-<div class="index_section1_button_link"></div>
 <img src="<?php echo get_template_directory_uri(); ?>\images\index\contacUs.png" class="index_section1_button"/>
 </div>
-
+</div>
 <!-- section 2 -->
 
 <div id="index_section2">
@@ -144,7 +145,7 @@ get_header();
     <div class="col-lg-4">
 		<div class="index_sectoin4_under_photo">
   		<p class=" index_section4_under_text">Job preparation curriculum</p>
-  		<p class="index_section4_read_more">read more</p>
+  		<p class="index_section4_read_more">read more>></p>
   		</div>
     </div>
     </div>
