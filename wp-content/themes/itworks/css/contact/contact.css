@@ -34,8 +34,31 @@
 
 #contact-form .wpcf7 #about-form-firstname, #contact-form .wpcf7 #about-form-lastname {
   display: inline-block;
+  width: 49%;
+}
+
+#contact-form .wpcf7 #about-form-firstname {
+  margin-right: 2%;
 }
 
 #contact-form .wpcf7-response-output {
   border-radius: 3px;
+}
+
+#contact-form input[type="submit"] {
+  background-color: #1bc7ef;
+  color: #ffffff;
+  border-radius: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#contact-form input[type="submit"]:hover {
+  color: #1bc7ef;
+  background-color: #ffffff;
+  border-color: #1bc7ef;
+}
+
+#contact-logo {
+  margin: 20px 0;
 }

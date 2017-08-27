@@ -36,9 +36,26 @@ $BlueBerryLT: #76ddf5;
       }
       #about-form-firstname, #about-form-lastname {
         display: inline-block;
+        width: 49%;
       }
+      #about-form-firstname{margin-right: 2%;}
     }
     .wpcf7-response-output{
       border-radius: 3px;
     }
+    input[type="submit"]{
+      background-color: $BlueBerryDrk;
+      color: #ffffff;
+      border-radius: 0;
+      font-weight: bold;
+      text-transform: uppercase;
+      &:hover{
+        color: $BlueBerryDrk;
+        background-color: #ffffff;
+        border-color: $BlueBerryDrk;
+      }
+    }
+}
+#contact-logo {
+  margin: 20px 0;
 }

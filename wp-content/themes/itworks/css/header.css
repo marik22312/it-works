@@ -38,6 +38,9 @@ header #header-menu ul li:last-child {
   font-weight: bolder !important;
   text-transform: uppercase !important;
   border-radius: 100px !important;
+}
+
+header #header-menu ul li:last-child a {
   color: #ffffff;
 }
 
@@ -45,7 +48,6 @@ header #header-menu ul li:last-child:hover {
   background-color: #76ddf5 !important;
   border: none !important;
   border-radius: 100px !important;
-  color: #000000;
 }
 
 header #header-menu ul li:hover {

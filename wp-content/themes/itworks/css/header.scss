@@ -36,12 +36,11 @@ header {
           font-weight: bolder !important;
           text-transform: uppercase !important;
           border-radius: 100px !important;
-          color: #ffffff;
+          a{color: #ffffff;}
           &:hover{
             background-color: $BlueBerryLT !important;
             border: none !important;
             border-radius: 100px !important;
-            color: #000000;
           }
         }
 

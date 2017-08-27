@@ -46,5 +46,5 @@ add_action('init','my_theme_setup');
   wp_enqueue_style('customCSS', get_template_directory_uri().'/style.css', array(), '1.0.0', 'all');
  	}
  add_action('wp', 'setup_theme_lib');
-
+ 
 ?>
