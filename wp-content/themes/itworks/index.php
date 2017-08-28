@@ -5,7 +5,7 @@ get_header();
 <!-- section1 -->
 
 <div id="index_section1">
-  <img src="http://localhost/itworks/wp-content/themes/itworks/images/index/index_main_image.jpg" alt="index_section1_img" class="index_section1_img">
+  <img src="<?php echo get_template_directory_uri() ?>/images/index/index_main_image.jpg" alt="index_section1_img" class="index_section1_img">
   <div class="index_section1_text">
 <span class="index_section1_top_text">it works us offers world-class web services to global customers, leveraging freelance portals and online work</span>
 <span class="index_section1_bottom_text">It Works US aims at advancing disadvantaged young adults living in remote areas</span>
