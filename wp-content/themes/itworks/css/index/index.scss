@@ -248,3 +248,13 @@ $blueColor: #169fc3;
     margin: 7% auto 7% auto;
   }
 }
+#ind-cta{
+  margin-top:20px;
+  .ind-cta{
+    background-color: $blueColor;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 45px;
+    padding: 10px;
+  }
+}

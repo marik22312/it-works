@@ -10,7 +10,7 @@
 <?php get_header(); ?>
 
    <section id="about_section1">
-    <img src="http://localhost/itworks/wp-content/themes/itworks/images/sini.jpg" alt="about_section1_img" class="about_section1_img">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/sini.jpg" alt="about_section1_img" class="about_section1_img">
     <div class="about_section1_text">
  				<h1 class="about_section1_title">about us</h1>
  				<h3 class="about_section1_second_line">It works US aims at advancing disadvantaged young adults living in remote areas</h3>
@@ -39,7 +39,7 @@
     </div>
     </div>
     <div class="col-lg-3">
-    <img src="http://localhost/itworks/wp-content/themes/itworks\images\index\friends.png" alt="friends" class="about_section2_img">
+    <img src="<?php echo get_template_directory_uri(); ?>\images\index\friends.png" alt="friends" class="about_section2_img">
     </div>
   </div>
   <a class="about_section2_bottom">Read More >></a>
@@ -54,7 +54,7 @@
 <div class="row about_section4_team_row">
 <?php for ($j=1; $j <=3; $j++) : ?>
   <div class="about_section4_team col-lg-4">
-    <img src="http://localhost/itworks/wp-content/themes/itworks\images\about\smallsini.png" alt="team" class="about_section4_img">
+    <img src="<?php echo get_template_directory_uri(); ?>\images\about\smallsini.png" alt="team" class="about_section4_img">
     <h6 class="about_section4_team_headline">Menahem Begin</h6>
     <span class="about_section4_team_span">Head of Logistics</span>
   </div>
@@ -64,7 +64,7 @@
 </section>
 <section id="about_section5">
   <h2 class="about_section5_headline">Affiliations</h2>
-  <img src="http://localhost/itworks/wp-content/themes/itworks\images\logo.png" alt="about_section5_logo" class="about_section5_logo">
+  <img src="<?php echo get_template_directory_uri(); ?>\images\logo.png" alt="about_section5_logo" class="about_section5_logo">
   <span class="about_section5_span">empowring people</span>
   <p class="about_section5_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <a class="about_section5_link">http://www.en.itworks.org.il</a>
