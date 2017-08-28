@@ -147,14 +147,13 @@ get_header();
     <div class="col-lg-4">
 		<div class="index_sectoin4_under_photo">
   		<p class=" index_section4_under_text">Job preparation curriculum</p>
-  		<p class="index_section4_read_more">read more>></p>
+  		<p class="index_section4_read_more">read more</p>
   		</div>
     </div>
     </div>
     </div>
   </div>
-
-  	<p class="index_section4_bottom_text" style="color: #5bc9e4; font-size: 20px; text-align: center; font-style: italic;"> Read More</p>
+  	<p class="index_section4_bottom_text"> Read More>></p>
   </section>
 
 <!-- section5 -->
