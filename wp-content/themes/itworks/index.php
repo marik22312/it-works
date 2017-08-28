@@ -9,7 +9,9 @@ get_header();
   <div class="index_section1_text">
 <span class="index_section1_top_text">it works us offers world-class web services to global customers, leveraging freelance portals and online work</span>
 <span class="index_section1_bottom_text">It Works US aims at advancing disadvantaged young adults living in remote areas</span>
-<img src="<?php echo get_template_directory_uri(); ?>\images\index\contacUs.png" class="index_section1_button"/>
+<div id="ind-cta" class="col-lg-4 col-lg-offset-4">
+  <span class="ind-cta">Contact Us</span>
+</div>
 </div>
 </div>
 <!-- section 2 -->
