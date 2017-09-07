@@ -46,5 +46,25 @@ add_action('init','my_theme_setup');
   wp_enqueue_style('customCSS', get_template_directory_uri().'/style.css', array(), '1.0.0', 'all');
  	}
  add_action('wp', 'setup_theme_lib');
- 
+
+ //Register Post Types
+function post_types(){
+  register_post_type('Main Page Control', array(
+    'labels' => array(
+      'name' => 'Main Page Control',
+      'singular_name' => 'main_page'),
+      'public' => true,
+      'has_archive' => true,
+      'supports' => array('custom_fields' ),
+  ));
+  register_post_type('footerCtrl', array(
+    'labels' => array(
+      'name' => 'Footer Page Control',
+      'singular_name' => 'footer_section'),
+      'public' => true,
+      'has_archive' => true,
+      'supports' => array('custom_fields' ),
+  ));
+};
+add_action('init', 'post_types')
 ?>
