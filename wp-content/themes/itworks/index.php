@@ -3,20 +3,18 @@ get_header();
 ?>
 <?php
   // First news Query arguments
-  $firstNews = array(
+  $indexQueryArgs = array(
     'post_type'              => array( 'Main Page Control' ),
     'posts_per_page'         => '1',
 );
 
 
 // First news Query
-$firstNewsQuery = new WP_Query( $firstNews );
+$indexQuery = new WP_Query( $indexQueryArgs );
 
-if ($firstNewsQuery->have_posts()):?>
-<?php
-  $playerCounter = 0;
-  while ($firstNewsQuery->have_posts()) :
-    $firstNewsQuery->the_post();
+if ($indexQuery->have_posts()){
+  while ($indexQuery->have_posts()) {
+    $indexQuery->the_post();
 ?>
 <!-- section1 -->
 
@@ -59,76 +57,42 @@ if ($firstNewsQuery->have_posts()):?>
 </div>
 <a href="<?php the_field('sec2_link'); ?>" class="index_section2_bottom"><?php the_field('sec2_link_text'); ?></a>
 </div>
-
 <!-- section3 -->
 
-<section id="index_section3">
-	<h2 class="index_section3_headline">How we can help</h2>
-	<div class="row">
+<section id="index_section3" class="row">
+	<h2 class="index_section3_headline"><?php the_field('sec3_title'); ?></h2>
     <div class="col-lg-10 col-lg-offset-1">
-      <div class="row index_section3_row">
-		<div class=" col-lg-4 index_section3_div">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/web.png" class="index_section3_image">
-			<p class="index_section3_under-photo">Web design and devalopment</p>
-			<p class="index_section3_paragraph">is simply dummy text of
-			 the printing<br>
-			 and typesetting industry.<br>
-			 Lorem Ipsum has been the industry's</p>
-		</div>
+      <?php
+      // First news Query arguments
+      $services = array(
+        'post_type'              => array( 'Services' ),
+        'posts_per_page'         => '6',
+        'order_by'               => 'date',
+      );
 
-		<div class="col-lg-4 index_section3_div">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/content.png" class="index_section3_image">
-			<p class="index_section3_under-photo">Content management system (CMS)</p>
-			<p class="index_section3_paragraph">is simply dummy text of
-			 the printing<br>
-			 and typesetting industry.<br>
-			 Lorem Ipsum has been the industry's</p>
-		</div>
 
-		<div class="col-lg-4 index_section3_div">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/custom.png" class="index_section3_image">
-			<p class="index_section3_under-photo">Custom application</p>
-			<p class="index_section3_paragraph">is simply dummy text of
-			 the printing<br>
-			 and typesetting industry.<br>
-			 Lorem Ipsum has been the industry's</p>
-		</div>
-	</div>
-      </div>
-            </div>
-	<div class="row">
-    <div class="col-lg-10 col-lg-offset-1">
-      <div class="row index_section3_row">
-		<div class="col-lg-4 index_section3_div">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/search.png" class="index_section3_image">
-			<p class="index_section3_under-photo">Search engine optimization</p>
-			<p class="index_section3_paragraph">is simply dummy text of
-			 the printing<br>
-			 and typesetting industry.<br>
-			 Lorem Ipsum has been the industry's</p>
-		</div>
+      // First news Query
+      $servicesQuery = new WP_Query( $services );
 
-		<div class="col-lg-4 index_section3_div">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/e-commerce.png" class="index_section3_image">
-			<p class="index_section3_under-photo">e-commerce</p>
-			<p class="index_section3_paragraph">is simply dummy text of
-			 the printing<br>
-			 and typesetting industry.<br>
-			 Lorem Ipsum has been the industry's</p>
-		</div>
+      if ($servicesQuery->have_posts()):?>
+      <?php
+      while ($servicesQuery->have_posts()) :
+        $servicesQuery->the_post();
+        ?>
 
-		<div class="col-lg-4 index_section3_div">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/responsive.png" class="index_section3_image">
-			<p class="index_section3_under-photo">Responsive design</p>
-			<p class="index_section3_paragraph">is simply dummy text of
-			 the printing<br>
-			 and typesetting industry.<br>
-			 Lorem Ipsum has been the industry's</p>
-		</div>
-	</div>
+		<a href="<?php echo get_post_permalink(); ?>"><div class="col-lg-4" id="index_section3_div">
+			<img src="<?php the_post_thumbnail_url(); ?>" class="index_section3_image" />
+			<p class="index_section3_under-photo"><?php the_title(); ?></p>
+			<p class="index_section3_paragraph"><?php the_content(); ?></p>
+		</div></a>
+    <?php wp_reset_postdata(); ?>
+  <?php  endwhile;
+  else:
+    echo '<p>Sorry, Something went wrong.</p>';
+  endif;
+  ?>
 </div>
-</div>
-  <p class="index_section3_bottom"> Read More>></p>
+<a class="index_section3_bottom" href="<?php the_field('sec3_link'); ?>"><?php the_field('sec3_link_text'); ?></a>
 	</section>
 
 <!-- section4 -->
@@ -201,10 +165,13 @@ if ($firstNewsQuery->have_posts()):?>
   </div>
   	<img src="<?php echo get_template_directory_uri(); ?>\images\index\contacUs.png" class="index_section5_button"/>
   </section>
-<?php  endwhile;
-else:
+<?php
+       wp_reset_postdata();
+  }}
+else{
   echo '<p>Sorry, Something went wrong.</p>';
-endif;
+}
+
 ?>
 <?php
 get_footer();

@@ -66,6 +66,14 @@ function post_types(){
       'has_archive' => true,
       'supports' => array('title', 'thumbnail', 'custom_fields', ),
   ));
+  register_post_type('Services', array(
+    'labels' => array(
+      'name' => 'Services',
+      'singular_name' => 'service_post'),
+      'public' => true,
+      'has_archive' => true,
+      'supports' => array('title', 'thumbnail', 'editor', ),
+  ));
   register_post_type('footerCtrl', array(
     'labels' => array(
       'name' => 'Footer Page Control',

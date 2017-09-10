@@ -70,9 +70,9 @@ $footerQuery = new WP_Query( $footerQueryArgs ); ?>
         if followed lines will be changed/removed you won't have premission to use this twentyfifteen_color_scheme_css_template*/
        ?>
       <p id="ft-copyright-dev">
-        &copy; Developed By <a href="https://www.facebook.com/marik.sh">Marik</a>,
-         <a href="https://www.facebook.com/asaf.hadad2">Asaf</a> &
-         <a href="https://www.facebook.com/omri.dunour">Omri</a>, In Association With
+        &copy; Developed By <a href="https://www.linkedin.com/in/marik-shnitman-2098ba142/">Marik</a>,
+         <a href="https://www.facebook.com/asaf.hadad2">Asaf</a> &amp;
+         <a href="https://www.facebook.com/omri.dunour">Omri</a>, In Collaboration With
       <a href="https://www.facebook.com/Go-local-376023196078320/">Go Local</a>
       </p>
     </div>

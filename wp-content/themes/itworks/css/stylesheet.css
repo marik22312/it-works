@@ -280,41 +280,47 @@ footer #ft-copyright p {
 #index_section3 {
   width: 100%;
   height: 100%;
+  /* #index_section3_div */
 }
 
 #index_section3 .index_section3_headline {
   display: block;
   margin: 40px;
+  margin-bottom: 70px;
   font-size: 72px;
   text-align: center;
   font-style: italic;
   font-weight: bold;
 }
 
-#index_section3 .index_section3_div {
+#index_section3 #index_section3_div {
   display: inline-block;
   vertical-align: top;
+  margin-bottom: 40px;
+  color: black;
+  /* .index_section3_image */
 }
 
-#index_section3 .index_section3_div .index_section3_image {
+#index_section3 #index_section3_div:hover, #index_section3 #index_section3_div:focus, #index_section3 #index_section3_div:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#index_section3 #index_section3_div .index_section3_image {
   height: 120px;
   width: auto;
   display: block;
   margin: auto;
 }
 
-#index_section3 .index_section3_row {
-  margin-bottom: 40px;
-}
-
-#index_section3 .index_section3_under-photo {
+#index_section3 #index_section3_div .index_section3_under-photo {
   font-size: 20px;
   font-style: italic;
   font-weight: bold;
   text-align: center;
 }
 
-#index_section3 .index_section3_paragraph {
+#index_section3 #index_section3_div p {
   font-size: 17px;
   font-style: italic;
   text-align: center;
@@ -546,7 +552,7 @@ footer #ft-copyright p {
 #contact-header h1 {
   font-size: 70px;
   font-weight: bold;
-  color: #76ddf5;
+  color: #1bc7ef;
 }
 
 #contact-header p {
@@ -606,6 +612,8 @@ footer #ft-copyright p {
 #about_section1 {
   height: 100%;
   width: 100%;
+  /* .about_section1_img */
+  /* .about_section1_text */
 }
 
 #about_section1 .about_section1_img {
@@ -622,6 +630,8 @@ footer #ft-copyright p {
   left: 22.5%;
   width: 50%;
   height: 50%;
+  /* .about_section1_title */
+  /* .about_section1_second_line */
 }
 
 #about_section1 .about_section1_text .about_section1_title {
@@ -637,10 +647,12 @@ footer #ft-copyright p {
   font-size: 34px;
 }
 
+/* #about_section1 */
 #about_section2 {
   background-color: #F1F1F1;
   height: 100%;
   width: 100%;
+  /* .about_section2_bottom */
 }
 
 #about_section2 .about_section2_headline {
@@ -683,6 +695,7 @@ footer #ft-copyright p {
   padding: 5%;
 }
 
+/* #about_section2 */
 #about_section3 {
   height: 500px;
   width: 100%;
@@ -692,6 +705,7 @@ footer #ft-copyright p {
   height: 100%;
   width: 100%;
   background-color: #F1F1F1;
+  /* .about_section4_team_row */
 }
 
 #about_section4 .about_secttion4_headline {
@@ -709,10 +723,12 @@ footer #ft-copyright p {
 
 #about_section4 .about_section4_team_row {
   margin-bottom: 5%;
+  /* .about_section4_team */
 }
 
 #about_section4 .about_section4_team_row .about_section4_team {
   padding: 0;
+  /* .about_section4_team_span */
 }
 
 #about_section4 .about_section4_team_row .about_section4_team .about_section4_img {
@@ -733,6 +749,7 @@ footer #ft-copyright p {
   display: inherit;
 }
 
+/* #about_section4 */
 #about_section5 .about_section5_headline {
   font-size: 70px;
   text-align: center;

@@ -8,7 +8,7 @@
     position: relative;
     filter: brightness(200%);
     -webkit-filter: brightness(200%);
-  }
+  }/* .about_section1_img */
 
   .about_section1_text {
     position: absolute;
@@ -22,15 +22,15 @@
       color: white;
       text-align: center;
       font-size: 72px;
-    }
+    }/* .about_section1_title */
 
     .about_section1_second_line {
       color: white;
       text-align: center;
       font-size: 34px;
-    }
-  }
-}
+    }/* .about_section1_second_line */
+  }/* .about_section1_text */
+}/* #about_section1 */
 
 #about_section2 {
   background-color: #F1F1F1;
@@ -75,8 +75,8 @@
     display: block;
     text-align: center;
     padding: 5%;
-  }
-}
+  } /* .about_section2_bottom */
+} /* #about_section2 */
 
 #about_section3 {
   height: 500px;
@@ -122,10 +122,10 @@
         color: $donutSprinkleDrk;
         text-align: center;
         display: inherit;
-      }
-    }
-  }
-}
+      }/* .about_section4_team_span */
+    }/* .about_section4_team */
+  }/* .about_section4_team_row */
+}/* #about_section4 */
 
 #about_section5{
   .about_section5_headline{
