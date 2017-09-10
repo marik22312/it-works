@@ -24,6 +24,7 @@ wp-config.php
 wp-config_url.php
 #ignore lib files (bootstrap, js libraries etc.)
 wp-content/themes/itworks/lib
+wp-content/themes/itworks/css/stylesheet.min.css
 wp-content/index.php
 wp-content/plugins
 wp-content/themes/index.php

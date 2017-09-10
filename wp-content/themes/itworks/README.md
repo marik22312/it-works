@@ -7,6 +7,5 @@ It Works Wordpres theme
   - Marik Shnitman
   - Asaf Hadad
   - Omri Du-Nour
-  - Dima Gusyatiner
 
 # Coming Soon!
