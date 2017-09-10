@@ -1,0 +1,17 @@
+@import "./variables";
+@import "./header";
+@import "./footer";
+@import "./index";
+@import "./getinvolved";
+@import "./contactus";
+@import "./aboutus";
+// Custom CSS
+body {
+  overflow-x: hidden;
+}/* body */
+
+.container-fluid {
+  padding: 0;
+} /*container-fluid */
+
+.row {margin:0;}

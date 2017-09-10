@@ -1,47 +1,63 @@
 <?php
 get_header();
 ?>
+<?php
+  // First news Query arguments
+  $firstNews = array(
+    'post_type'              => array( 'Main Page Control' ),
+    'posts_per_page'         => '1',
+);
 
+
+// First news Query
+$firstNewsQuery = new WP_Query( $firstNews );
+
+if ($firstNewsQuery->have_posts()):?>
+<?php
+  $playerCounter = 0;
+  while ($firstNewsQuery->have_posts()) :
+    $firstNewsQuery->the_post();
+?>
 <!-- section1 -->
 
 <div id="index_section1">
   <img src="<?php echo get_template_directory_uri() ?>/images/index/index_main_image.jpg" alt="index_section1_img" class="index_section1_img">
   <div class="index_section1_text">
-<span class="index_section1_top_text">it works us offers world-class web services to global customers, leveraging freelance portals and online work</span>
-<span class="index_section1_bottom_text">It Works US aims at advancing disadvantaged young adults living in remote areas</span>
+<span class="index_section1_top_text"><?php the_field('sec1_title') ?></span>
+<span class="index_section1_bottom_text"><?php the_field('sec1_subtitle') ?></span>
 <div id="ind-cta" class="col-lg-4 col-lg-offset-4">
-  <span class="ind-cta">Contact Us</span>
+  <?php if (get_field('btn_text') != null): ?>
+    <a class="ind-btn" href="<?php the_field('btn_link'); ?>"><?php the_field('btn_text'); ?></a>
+  <?php endif; ?>
 </div>
 </div>
 </div>
 <!-- section 2 -->
 
 <div id="index_section2">
-<h2 class="index_section2_headline">ABOUT US</h2>
+<h2 class="index_section2_headline"><?php the_field('sec2_title') ?></h2>
 <div class="row">
   <div class="index_section2_left_text col-lg-offset-2 col-lg-5">
     <div class="row">
 <div class="index_section2_top_text">
   <span class="index_section2_text_number col-lg-1">1/</span>
-  <p class="col-lg-9">
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
-</p>
+  <p class="col-lg-9"><?php the_field('sec2_text1') ?></p>
 </div>
 </div>
 <div class="row">
 <div class="index_section2_bottom_text">
   <span class="index_section2_text_number col-lg-1">2/</span>
-  <p class="col-lg-9">
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
-</p>
+  <p class="col-lg-9"><?php the_field('sec2_text2'); ?></p>
 </div>
   </div>
   </div>
-  <div class="col-lg-3">
-  <img src="<?php echo get_template_directory_uri(); ?>\images\index\friends.png" alt="friends" class="index_section2_img">
-  </div>
+  <?php if (get_field('sec2_image') != null): ?>
+    <div class="col-lg-3">
+      <img src="<?php the_field('sec2_image'); ?>" alt="friends" class="index_section2_img">
+    </div>
+  <?php endif; ?>
 </div>
-<a class="index_section2_bottom">Read More >></a>
+<a href="<?php the_field('sec2_link'); ?>" class="index_section2_bottom"><?php the_field('sec2_link_text'); ?></a>
 </div>
 
 <!-- section3 -->
@@ -185,7 +201,11 @@ get_header();
   </div>
   	<img src="<?php echo get_template_directory_uri(); ?>\images\index\contacUs.png" class="index_section5_button"/>
   </section>
-
+<?php  endwhile;
+else:
+  echo '<p>Sorry, Something went wrong.</p>';
+endif;
+?>
 <?php
 get_footer();
 ?>

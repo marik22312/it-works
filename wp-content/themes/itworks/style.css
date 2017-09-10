@@ -7,10 +7,4 @@ Text Domain: it_works
 tags: balck, white, responsive, fetured-images, custom-menu, custom-header;
 */
 
-@import "./css/header/header.css";
-@import "./css/index/index.css";
-@import "./css/aboutus/aboutus.css";
-@import "./css/getinvolved/getinvolved.css";
-@import "./css/contact/contact.css";
-@import "./css/footer/footer.css";
-.row {margin:0;}
+@import "./css/stylesheet.css";

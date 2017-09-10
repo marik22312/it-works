@@ -18,6 +18,7 @@ add_action('init', 'register_topMenu');
 function my_theme_setup(){
 add_theme_support('menus' );
 add_theme_support( 'custom-logo' );
+add_theme_support( 'post-thumbnails' );
 register_nav_menu('primary','primary header navigation');
 register_nav_menu('secondary','secondary header navigation');
 
@@ -56,6 +57,14 @@ function post_types(){
       'public' => true,
       'has_archive' => true,
       'supports' => array('custom_fields' ),
+  ));
+  register_post_type('Our Team', array(
+    'labels' => array(
+      'name' => 'Our Team',
+      'singular_name' => 'team_post'),
+      'public' => true,
+      'has_archive' => true,
+      'supports' => array('title', 'thumbnail', 'custom_fields', ),
   ));
   register_post_type('footerCtrl', array(
     'labels' => array(

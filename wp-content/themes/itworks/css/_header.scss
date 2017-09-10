@@ -1,8 +1,4 @@
-/*Color Var's*/
-$DonutSprinkleDrk: #6c3290;
-$DonutSprinkleLT: #a784bc;
-$BlueBerryDrk: #1bc7ef;
-$BlueBerryLT: #76ddf5;
+
 body{
   overflow-x: hidden;
 }
@@ -32,20 +28,20 @@ header {
         padding: 1em;
         margin-top: 1vh;
         &:last-child{
-          background-color: $BlueBerryDrk !important;
+          background-color: $blueBerrySlushDrk !important;
           font-weight: bolder !important;
           text-transform: uppercase !important;
           border-radius: 100px !important;
           a{color: #ffffff;}
           &:hover{
-            background-color: $BlueBerryLT !important;
+            background-color: $blueBerrySlushLT !important;
             border: none !important;
             border-radius: 100px !important;
           }
         }
 
         &:hover {
-          border-bottom: 4px solid $BlueBerryDrk;
+          border-bottom: 4px solid $blueBerrySlushDrk;
           border-radius: 3px;
         }
 
@@ -62,18 +58,18 @@ header {
       }
 
       li.current-menu-item {
-        border-bottom: 4px solid $BlueBerryDrk;
+        border-bottom: 4px solid $blueBerrySlushDrk;
         border-radius: 3px;
-        &:hover {border-color: $BlueBerryLT;}
+        &:hover {border-color: $blueBerrySlushLT;}
         &:last-child{
-          background-color: $BlueBerryDrk !important;
+          background-color: $blueBerrySlushDrk !important;
           font-weight: bolder !important;
           text-transform: uppercase !important;
           border-radius: 100px !important;
           border: none;
           color: #ffffff;
           &:hover{
-            background-color: $BlueBerryLT !important;
+            background-color: $blueBerrySlushLT !important;
             border: none !important;
             border-radius: 100px !important;
             color: #000000;

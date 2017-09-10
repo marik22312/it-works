@@ -1,17 +1,9 @@
-/*Color Var's*/
-$DonutSprinkleDrk: #6c3290;
-$DonutSprinkleLT: #a784bc;
-$BlueBerryDrk: #1bc7ef;
-$BlueBerryLT: #76ddf5;
-
-//TODO: added submit button style
-//TODO: Add inline for first & last name
 #contact-header{
   text-align: center;
   h1 {
     font-size: 70px;
     font-weight: bold;
-    color: $BlueBerryLT;
+    color: $blueBerrySlushLT;
   }
   p {
     font-weight: bold;
@@ -27,11 +19,11 @@ $BlueBerryLT: #76ddf5;
     }
     .wpcf7 {
       input, select, textarea, option {
-        border: 1px solid $BlueBerryLT;
+        border: 1px solid $blueBerrySlushLT;
         margin-top: 10px;
         padding: 10px 5px;
         &:focus {
-          border: 1px solid $BlueBerryDrk;
+          border: 1px solid $blueBerrySlushDrk;
         }
       }
       #about-form-firstname, #about-form-lastname {
@@ -44,15 +36,15 @@ $BlueBerryLT: #76ddf5;
       border-radius: 3px;
     }
     input[type="submit"]{
-      background-color: $BlueBerryDrk;
+      background-color: $blueBerrySlushDrk;
       color: #ffffff;
       border-radius: 0;
       font-weight: bold;
       text-transform: uppercase;
       &:hover{
-        color: $BlueBerryDrk;
+        color: $blueBerrySlushDrk;
         background-color: #ffffff;
-        border-color: $BlueBerryDrk;
+        border-color: $blueBerrySlushDrk;
       }
     }
 }

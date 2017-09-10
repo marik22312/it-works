@@ -1,5 +1,3 @@
-$purpleColor: #6c3290;
-$blueColor: #169fc3;
 
 #index_section1 {
   height: 100%;
@@ -208,7 +206,7 @@ $blueColor: #169fc3;
   .index_section4_bottom_text {
     height: 10%;
     padding: 5%;
-    color: $blueColor;
+    color: $blueFoodColoringDrk;
     font-size: 20px;
     text-align: center;
     font-style: italic;
@@ -250,11 +248,17 @@ $blueColor: #169fc3;
 }
 #ind-cta{
   margin-top:20px;
-  .ind-cta{
-    background-color: $blueColor;
+  .ind-btn{
+    background-color: $blueFoodColoringDrk;
     border-radius: 50px;
     font-weight: bold;
-    font-size: 45px;
-    padding: 10px;
+    font-size: 40px;
+    color: white;
+    padding: 15px;
+    &:hover {
+      text-decoration: none;
+      background-color: $blueFoodColoringLT;
+    }
+    &:visited, &:active, &:focus{text-decoration: none;}
   }
 }
