@@ -91,8 +91,8 @@ if ($indexQuery->have_posts()){
     echo '<p>Sorry, Something went wrong.</p>';
   endif;
   ?>
+  <!-- <a class="index_section3_bottom" href="<?php the_field('sec3_link'); ?>"><?php the_field('sec3_link_text'); ?></a> -->
 </div>
-<a class="index_section3_bottom" href="<?php the_field('sec3_link'); ?>"><?php the_field('sec3_link_text'); ?></a>
 	</section>
 
 <!-- section4 -->
