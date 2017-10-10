@@ -1,14 +1,23 @@
 @import "./variables";
 @import "./header";
-@import "./footer";
 @import "./index";
 @import "./getinvolved";
 @import "./contactus";
 @import "./aboutus";
+@import "./footer";
 // Custom CSS
 body {
   overflow-x: hidden;
 }/* body */
+
+h2{
+  display: block;
+  margin: 5%;
+  text-transform: uppercase;
+  font-size: 4vw;
+  text-align: center;
+  font-weight: bold;
+}
 
 .container-fluid {
   padding: 0;

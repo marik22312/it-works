@@ -18,50 +18,24 @@ if ($indexQuery->have_posts()){
 ?>
 <!-- section1 -->
 
-<div id="index_section1">
+<div id="index_section1" class="row">
   <img src="<?php echo get_template_directory_uri() ?>/images/index/index_main_image.jpg" alt="index_section1_img" class="index_section1_img">
-  <div class="index_section1_text">
-<span class="index_section1_top_text"><?php the_field('sec1_title') ?></span>
-<span class="index_section1_bottom_text"><?php the_field('sec1_subtitle') ?></span>
-<div id="ind-cta" class="col-lg-4 col-lg-offset-4">
-  <?php if (get_field('btn_text') != null): ?>
-    <a class="ind-btn" href="<?php the_field('btn_link'); ?>"><?php the_field('btn_text'); ?></a>
-  <?php endif; ?>
-</div>
-</div>
-</div>
-<!-- section 2 -->
-
-<div id="index_section2">
-<h2 class="index_section2_headline"><?php the_field('sec2_title') ?></h2>
-<div class="row">
-  <div class="index_section2_left_text col-lg-offset-2 col-lg-5">
-    <div class="row">
-<div class="index_section2_top_text">
-  <span class="index_section2_text_number col-lg-1">1/</span>
-  <p class="col-lg-9"><?php the_field('sec2_text1') ?></p>
-</div>
-</div>
-<div class="row">
-<div class="index_section2_bottom_text">
-  <span class="index_section2_text_number col-lg-1">2/</span>
-  <p class="col-lg-9"><?php the_field('sec2_text2'); ?></p>
-</div>
+  <div class="index_section1_text col-md-8 col-xs-12 col-md-offset-1">
+    <span class="index_section1_top_text"><?php the_field('sec1_title') ?></span>
+    <span class="index_section1_bottom_text"><?php the_field('sec1_subtitle') ?></span>
   </div>
+  <!-- CTA button -->
+  <div id="index_section1_button" class="col-xs-12">
+    <?php if (get_field('btn_text') != null): ?>
+      <a class="ind-btn col-xs-4 col-xs-offset-4" href="<?php the_field('btn_link'); ?>"><?php the_field('btn_text'); ?></a>
+    <?php endif; ?>
   </div>
-  <?php if (get_field('sec2_image') != null): ?>
-    <div class="col-lg-3">
-      <img src="<?php the_field('sec2_image'); ?>" alt="friends" class="index_section2_img">
-    </div>
-  <?php endif; ?>
 </div>
-<a href="<?php the_field('sec2_link'); ?>" class="index_section2_bottom"><?php the_field('sec2_link_text'); ?></a>
-</div>
-<!-- section3 -->
+<!-- section2 -->
 
-<section id="index_section3" class="row">
-	<h2 class="index_section3_headline"><?php the_field('sec3_title'); ?></h2>
-    <div class="col-lg-10 col-lg-offset-1">
+<section id="index_section2" class="row">
+	<h2><?php the_field('sec2_title'); ?></h2>
+    <div class="container-fluid">
       <?php
       // First news Query arguments
       $services = array(
@@ -80,90 +54,87 @@ if ($indexQuery->have_posts()){
         $servicesQuery->the_post();
         ?>
 
-		<a href="<?php echo get_post_permalink(); ?>"><div class="col-lg-4" id="index_section3_div">
-			<img src="<?php the_post_thumbnail_url(); ?>" class="index_section3_image" />
-			<p class="index_section3_under-photo"><?php the_title(); ?></p>
-			<p class="index_section3_paragraph"><?php the_content(); ?></p>
+		<a href="<?php echo get_post_permalink(); ?>"><div class="col-xs-12 col-md-4" id="index_section2_tile">
+			<img src="<?php the_post_thumbnail_url(); ?>" class="index_section2_tile-image" />
+			<p class="index_section2_service"><?php the_title(); ?></p>
 		</div></a>
-    <?php wp_reset_postdata(); ?>
-  <?php  endwhile;
+    <?php $servicesQuery->reset_postdata(); ?>
+  <?php  endwhile; $indexQuery->reset_postdata();
   else:
     echo '<p>Sorry, Something went wrong.</p>';
   endif;
   ?>
-  <!-- <a class="index_section3_bottom" href="<?php the_field('sec3_link'); ?>"><?php the_field('sec3_link_text'); ?></a> -->
 </div>
 	</section>
 
 <!-- section4 -->
 
-  <section id="index_section4">
-    <div class="index_section4_top">
-  	<h2 class="index_section4_headline">TRAINING</h2>
+  <section id="index_section3" class="row">
+    <h2>the difference we make</h2>
 
-  	<h3 class="index_section4_subheadline1">Our Bootcamp</h3>
-    <div class="row">
-  	<p class="index_section4_text col-lg-8 col-lg-offset-2">
-    An intensive, hands-on learning program that teaches fellows industry in-demand digital skills, such as:
-  	Web Development, Digital Marketing or User Experience (UX) Design</p>
+    <div class="container">
+      <div class="ind-sec3-tile col-xs-12 col-md-3">
+        <img class="ind-sec3-tile-image" src="<?php the_field('sec3_img1'); ?>"/>
+        <p class="ind-sec3-tile-text">
+          <?php the_field('sec3_text1'); ?>
+        </p>
+      </div>
+      <div class="ind-sec3-tile col-xs-12 col-md-3">
+        <img class="ind-sec3-tile-image" src="<?php the_field('sec3_img2'); ?>"/>
+        <p class="ind-sec3-tile-text">
+          <?php the_field('sec3_text2'); ?>
+        </p>
+      </div>
+      <div class="ind-sec3-tile col-xs-12 col-md-3">
+        <img class="ind-sec3-tile-image" src="<?php the_field('sec3_img3'); ?>"/>
+        <p class="ind-sec3-tile-text">
+          <?php the_field('sec3_text3'); ?>
+        </p>
+      </div>
+      <div class="ind-sec3-tile col-xs-12 col-md-3">
+        <img class="ind-sec3-tile-image" src="<?php the_field('sec3_img4'); ?>"/>
+        <p class="ind-sec3-tile-text">
+          <?php the_field('sec3_text4'); ?>
+        </p>
+      </div>
     </div>
-    	<p class="index_section4_subheadline2">Bootcamps also include</p>
-    </div>
-  <div class="row index_section4_bottom">
-    <div class="col-lg-10 col-lg-offset-1">
-      <div class="row">
-        <div class=" col-lg-4">
-  		<div class="index_sectoin4_under_photo">
-  		<p class=" index_section4_under_text" style="">Technical english course</p>
-  		<p class="index_section4_read_more">read more</p>
-  		</div>
-    </div>
-    <div class="col-lg-4">
-  		<div class="index_sectoin4_under_photo">
-  		<p class=" index_section4_under_text">Social resposibility and community involvement classes</p>
-  		<p class="index_section4_read_more">read more</p>
-  		</div>
-    </div>
-    <div class="col-lg-4">
-		<div class="index_sectoin4_under_photo">
-  		<p class=" index_section4_under_text">Job preparation curriculum</p>
-  		<p class="index_section4_read_more">read more</p>
-  		</div>
-    </div>
-    </div>
-    </div>
-  </div>
-  	<p class="index_section4_bottom_text"> Read More>></p>
+
   </section>
 
 <!-- section5 -->
 
-  <section id="index_section5">
-  	<h2 class="index_section5_headline">GET INVOLVED</h2>
+  <section id="index_section4" class="row">
+    <h2><?php the_field('sec4_title'); ?></h2>
 
-  <div class="row">
-    <div class="col-lg-10 col-lg-offset-1">
-      <div class="row">
-  	<div class="col-lg-3">
-  		<img src="<?php echo get_template_directory_uri(); ?>/images/provide-project.png" class="index_section5_image">
-  		<p class="index_section5_text">Provide us with projects</p>
-  	</div>
-  	<div class="col-lg-3">
-  			<img src="<?php echo get_template_directory_uri(); ?>/images/mentor.png" class="index_section5_image">
-  		<p class="index_section5_text">Mentor our fellows</p>
-  	</div>
-  	<div class="col-lg-3">
-  		<img src="<?php echo get_template_directory_uri(); ?>/images/hire.png" class="index_section5_image">
-  		<p class="index_section5_text">Hire a graduate</p>
-  	</div>
-  	<div class="col-lg-3">
-  		<img src="<?php echo get_template_directory_uri(); ?>/images/donate.png" class="index_section5_image">
-  	</div>
-  		<p class="index_section5_text">Donate</p>
+    <div class="container">
+      <div class="col-xs-12 col-md-4">
+        <img src="<?php the_field('sec4_img1'); ?>" />
+        <span class="col-xs-1">1.</span>
+        <p class="col-xs-10 col-xs-push-1"><?php the_field('sec4_text1'); ?></p>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <img src="<?php the_field('sec4_img2'); ?>" />
+        <span class="col-xs-1">2.</span>
+        <p class="col-xs-10 col-xs-push-1"><?php the_field('sec4_text2'); ?></p>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <img src="<?php the_field('sec4_img3'); ?>" />
+        <span class="col-xs-1">3.</span>
+        <p class="col-xs-10 col-xs-push-1"><?php the_field('sec4_text3'); ?></p>
+      </div>
+
+      <p class="ind-sec4-text">
+        <?php the_field('sec4_text'); ?>
+      </p>
+
+      <p class="ind-sec4-subtext">
+        Looing for more information?
+      </p>
+      <!-- CTA button -->
+      <div id="index_sec4_button" class="col-xs-12">
+          <a class="ind-btn col-xs-4 col-xs-offset-4" href="<?php the_field('btn_link'); ?>">contact us >></a>
+      </div>
     </div>
-  </div>
-  </div>
-  	<img src="<?php echo get_template_directory_uri(); ?>\images\index\contacUs.png" class="index_section5_button"/>
   </section>
 <?php
        wp_reset_postdata();
