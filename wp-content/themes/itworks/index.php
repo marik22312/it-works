@@ -18,8 +18,8 @@ if ($indexQuery->have_posts()){
 ?>
 <!-- section1 -->
 
-<div id="index_section1" class="row">
-  <img src="<?php echo get_template_directory_uri() ?>/images/index/index_main_image.jpg" alt="index_section1_img" class="index_section1_img">
+<section id="index_section1" class="row">
+  <!-- <img src="<?php echo get_template_directory_uri() ?>/images/index/index_main_image.jpg" alt="index_section1_img" class="index_section1_img"> -->
   <div class="index_section1_text col-md-8 col-xs-12 col-md-offset-1">
     <span class="index_section1_top_text"><?php the_field('sec1_title') ?></span>
     <span class="index_section1_bottom_text"><?php the_field('sec1_subtitle') ?></span>
@@ -30,7 +30,11 @@ if ($indexQuery->have_posts()){
       <a class="ind-btn col-xs-4 col-xs-offset-4" href="<?php the_field('btn_link'); ?>"><?php the_field('btn_text'); ?></a>
     <?php endif; ?>
   </div>
-</div>
+  <div id="down-chevron" class="col-xs-12">
+    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+  </div>
+</section>
 <!-- section2 -->
 
 <section id="index_section2" class="row">

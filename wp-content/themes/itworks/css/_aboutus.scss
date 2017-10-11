@@ -1,49 +1,39 @@
 #about_section1 {
   height: 100%;
   width: 100%;
+  background-image: url('../images/about/head.jpg');
+  background-size: 100% 135%;
+  background-repeat: no-repeat;
+  background-position: bottom;
 
-  .about_section1_img {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    filter: brightness(200%);
-    -webkit-filter: brightness(200%);
-  }/* .about_section1_img */
 
   .about_section1_text {
-    position: absolute;
-    top: 22.5%;
-    left: 22.5%;
-    width: 50%;
-    height: 50%;
+    margin-top: 13vh;
+    margin-bottom: 20vh;
+    color: white;
+    text-align: center;
 
-    .about_section1_title {
-      font-weight: bold;
-      color: white;
-      text-align: center;
-      font-size: 72px;
-    }/* .about_section1_title */
+    .about_section1_top_text {
+      font-size: 4vw;
+      line-height: 150%;
+      font-weight: 600;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 5%;
+    }
 
-    .about_section1_second_line {
-      color: white;
-      text-align: center;
-      font-size: 34px;
-    }/* .about_section1_second_line */
-  }/* .about_section1_text */
-}/* #about_section1 */
+    .about_section1_bottom_text {
+      font-size: 2vw;
+      font-weight: normal;
+      display: block;
+    }
+  }
+}
 
 #about_section2 {
   background-color: #F1F1F1;
-  height: 100%;
-  width: 100%;
-
-  .about_section2_headline {
-    text-align: center;
-    padding: 70px;
-    margin: 0;
-    font-size: 72px;
-    font-weight: bold;
-  }
+  padding-top: 20px;
+  padding-bottom: 50px;
 
   .about_section2_left_text {
     font-size: 20px;
@@ -66,97 +56,79 @@
     width: 100%;
     height: 100%;
   }
-
-  .about_section2_bottom {
-    color: #5bc9e4;
-    font-size: 20px;
-    text-align: center;
-    font-style: italic;
-    display: block;
-    text-align: center;
-    padding: 5%;
-  } /* .about_section2_bottom */
 } /* #about_section2 */
 
 #about_section3 {
-  height: 500px;
-  width: 100%;
+
+  .sec3_tile {
+    text-align: center;
+
+    h5{
+      font-weight: 600;
+      font-size: 22px;
+      text-transform: capitalize;
+    }
+    p {font-size: 18px;}
+
+    img{
+      margin-bottom: 20px;
+    }
+  }
 }
 
 #about_section4 {
   height: 100%;
   width: 100%;
   background-color: #F1F1F1;
-  .about_secttion4_headline {
-    text-align: center;
-    padding: 5%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  h4 {
+    margin-top: 0;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 1.1em;
   }
+  .about_team_tile{
+    margin-bottom: 20px;
+    img{
+      border-radius: 50%;
+      float: none;
+    }
 
-  .about_section4_sub {
-    text-align: center;
-    padding-bottom: 5%;
-    font-size: 40px;
+    .team_name {
+      color: $blueBerrySlushDrk;
+      text-align: center;
+      font-weight: 600;
+      font-size: 21px;
+      text-transform: capitalize;
+      margin: 9px 0;
+    } /* .team_name */
+
+    .team_title {
+      color: $purpleBazzokaDrk;
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 20px;
+    } /* .team_title */
+
   }
-
-  .about_section4_team_row {
-    margin-bottom: 5%;
-
-    .about_section4_team {
-      padding: 0;
-
-      .about_section4_img {
-        width: 55%;
-        margin: auto;
-        display: inherit;
-      }
-
-      .about_section4_team_headline {
-        font-size: 16px;
-        text-align: center;
-        color: $blueBerrySlushDrk;
-      }
-
-      .about_section4_team_span {
-        color: $donutSprinkleDrk;
-        text-align: center;
-        display: inherit;
-      }/* .about_section4_team_span */
-    }/* .about_section4_team */
-  }/* .about_section4_team_row */
 }/* #about_section4 */
 
 #about_section5{
-  .about_section5_headline{
-    font-size: 70px;
-    text-align: center;
-    padding: 5%;
-    text-transform: capitalize;
-  }
+
   .about_section5_logo{
     margin: auto;
     display: inherit;
     height: 90px;
     width: auto;
-  }
-  .about_section5_span{
-    font-size: 40px;
-    text-align: center;
-    display: inherit;
-    padding-bottom: 5%;
-  }
-  .about_section5_text{
-    font-size: 35px;
-    max-width: 60%;
-    margin-left: 20%;
-    text-align: center;
+    margin-bottom: 20px;
   }
   .about_section5_link{
+    cursor: pointer;
     padding: 5%;
     text-align: center;
     color: $blueBerrySlushDrk;
     display: inherit;
     font-size: 20px;
+    font-style: italic;
 }
 }

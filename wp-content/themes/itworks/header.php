@@ -18,6 +18,11 @@
       ?><a href="<?php echo site_url(); ?>">
         <img id="header-logo" src="<?php echo $image[0]; ?>" alt="<?php echo bloginfo('name'); ?>" title="<?php echo bloginfo('name'); ?>">
         </a>
+
+        <div id="mobile-ham">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+
         <?php
         wp_nav_menu( array(
            'theme_location' => 'header-menu',
