@@ -1,0 +1,137 @@
+#services_section1 {
+  height: 100%;
+  width: 100%;
+  background-size: 100% 135%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+
+  .services_section1_text {
+    margin-top: 13vh;
+    margin-bottom: 20vh;
+    color: white;
+    text-align: center;
+
+    .services_section1_top_text {
+      font-size: 4vw;
+      line-height: 150%;
+      font-weight: 600;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 5%;
+    }
+
+    .services_section1_bottom_text {
+      font-size: 2vw;
+      font-weight: normal;
+      display: block;
+    }
+  }
+} /* #services_section1 */
+
+#services_section2 {
+  .service_tile{
+    min-height: 290px;
+    text-align: center;
+    margin-bottom: 40px;
+
+    img{
+      float: none;
+      max-height: 150px;
+      width: auto;
+      margin-bottom: 30px;
+    }
+
+    .service-name{
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }/* .service-name */
+
+    .service-desc{
+      font-size: 15px;
+    } /* .service-desc */
+  } /* .service_tile */
+} /* #services_section2 */
+#services_section3 {
+  .work_tile{
+    height: 290px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: #000000;
+
+    img{
+      float: none;
+      // max-height: 150px;
+      // width: auto;
+      margin-bottom: 30px;
+    }
+
+
+    a{
+      text-decoration: none;
+      color: #000000;
+      &:visited, &:focus, &:active {
+        text-decoration: none;
+        color: #000000;
+      }
+      .work-name{
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-decoration: none !important;
+
+      }/* .work-name */
+
+      .work-url{
+        font-style: italic;
+        color: $blueBerrySlushLT;
+        font-weight: bold;
+        font-size: 15px;
+        &:hover {text-decoration: underline;}
+      }/* .work-url */
+    } /* .service-desc */
+  } /* .work_tile */
+} /* #services_section3 */
+
+/* testimonials */
+#service-section4{
+  margin-bottom: 40px;
+.carousel-control.right, .carousel-control.left{background: none;color: #000}
+.testimonials-slide {
+
+  border: 2px solid $blueBerrySlushDrk;
+  padding: 2% 4%;
+
+  img{
+    height: auto;
+  } /* img */
+  .testemonial-content{
+    .testimony{
+      font-weight: 600;
+      line-height: 25px;
+      font-style: italic;
+      margin-bottom: 10%;
+    } /* .testimony */
+    .client {
+      font-style: italic;
+      font-weight: normal;
+    } /*.client */
+    .location{
+      color: #777;
+    } /* .location */
+  } /* .testemonial-content */
+} /* .testimonials-slide */
+} /* #services_section4 */
+
+@media only screen and (max-width: 801px) {
+  #services_section2 {
+    .service_tile{
+
+      img{
+        width: 100%;
+      }
+    }
+  }
+}/* Media 801px */

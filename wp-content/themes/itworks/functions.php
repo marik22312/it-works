@@ -74,6 +74,38 @@ function post_types(){
       'has_archive' => true,
       'supports' => array('title', 'thumbnail', 'editor', ),
   ));
+  register_post_type('Our Works', array(
+    'labels' => array(
+      'name' => 'Our Works',
+      'singular_name' => 'works_post'),
+      'public' => true,
+      'has_archive' => true,
+      'supports' => array('title', 'thumbnail', 'custom_fields', ),
+  ));
+  register_post_type('Testimonials', array(
+    'labels' => array(
+      'name' => 'Testimonials',
+      'singular_name' => 'testimonials'),
+      'public' => true,
+      'has_archive' => true,
+      'supports' => array('title', 'thumbnail', 'custom_fields' ),
+  ));
+  register_post_type('Training Testimonials', array(
+    'labels' => array(
+      'name' => 'Training Testimonials',
+      'singular_name' => 'training testimonials'),
+      'public' => true,
+      'has_archive' => true,
+      'supports' => array('title', 'thumbnail', 'custom_fields' ),
+  ));
+  register_post_type('Involve Testimonials', array(
+    'labels' => array(
+      'name' => 'Involve Testimonials',
+      'singular_name' => 'involve testimonials'),
+      'public' => true,
+      'has_archive' => true,
+      'supports' => array('title', 'thumbnail', 'custom_fields' ),
+  ));
   register_post_type('footerCtrl', array(
     'labels' => array(
       'name' => 'Footer Page Control',

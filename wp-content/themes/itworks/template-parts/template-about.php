@@ -32,7 +32,7 @@ if (have_posts()):
           <div class="about_section2_top_text">
             <span class="about_section2_text_number col-lg-1">1.</span>
             <p class="col-lg-9">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+              It Works US offers an intensive web development Bootcamp and a comprehensive Apprenticeship. The yearlong program builds web skills and offers practical work experience while encouraging social responsibility.
             </p>
           </div>
         </div>
@@ -40,7 +40,7 @@ if (have_posts()):
           <div class="about_section2_bottom_text">
             <span class="about_section2_text_number col-lg-1">2.</span>
             <p class="col-lg-9">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+              Our fellows are young adults from the social and geographical periphery. Coming from regions suffering lower levels of public education and limited government support, these individuals face many challenges to integrate into the tech industry.
             </p>
           </div>
         </div>

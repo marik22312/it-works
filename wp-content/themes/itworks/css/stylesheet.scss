@@ -1,9 +1,11 @@
 @import "./variables";
 @import "./header";
 @import "./index";
+@import "./aboutus";
+@import "./services";
+@import "./training";
 @import "./getinvolved";
 @import "./contactus";
-@import "./aboutus";
 @import "./footer";
 // Custom CSS
 body {
@@ -22,7 +24,7 @@ h4{
   display: block;
   margin: 5%;
   text-transform: capitalize;
-  font-size: 1vw;
+  font-size: 20px;
   text-align: center;
   font-weight: normal;
 }

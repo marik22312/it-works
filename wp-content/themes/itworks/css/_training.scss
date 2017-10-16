@@ -1,0 +1,116 @@
+#training_section1 {
+  height: 100%;
+  width: 100%;
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+  .training_section1_text {
+    margin-top: 13vh;
+    margin-bottom: 20vh;
+    color: white;
+    text-align: center;
+
+    .training_section1_top_text {
+      font-size: 4vw;
+      line-height: 150%;
+      font-weight: 600;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 5%;
+    }
+
+    .training_section1_bottom_text {
+      font-size: 2vw;
+      font-weight: normal;
+      display: block;
+    }
+  }
+} /* #services_section1 */
+
+/* Section 2 */
+.bootcamps{
+  margin-bottom: 5% !important;
+  .bootcamp-tile{
+    img{
+      float: none;
+      display: block;
+      max-height: 150px;
+      width: auto;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
+    h5 {
+      text-align: center;
+      font-weight: 600;
+      font-size: 20px;
+    }
+  } /* .bootcamp-tile */
+} /* .bootcamps */
+
+#training_section3{
+  p{
+    float:none;
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 10%;
+  }
+  .videoWrapper {
+	   position: relative;
+	   padding-bottom: 56.25%; /* 16:9 */
+     padding-top: 25px;
+     height: 0;
+     margin-bottom: 10%;
+
+     iframe {
+	      position: absolute;
+	      top: 0;
+	      left: 0;
+	      width: 100%;
+	      height: 100%;
+      } /* iframe */
+    } /* .videoWrapper */
+  } /* #training_section3 */
+
+  #training_section4, #training_section5 {
+    h2 {
+      font-size: 35px;
+      margin-bottom: 5px;
+    }
+    h4 {
+      margin-top: 30px;
+      line-height: 1.2;
+    }
+  }
+
+  #training_section6{
+    margin-bottom: 40px;
+  .carousel-control.right, .carousel-control.left{background: none; color:#000}
+  .testimonials-slide {
+    min-height: 300px;
+    max-height: 300px;
+    background-color: #f1f1f1;
+    padding: 2% 4%;
+
+    img{
+      height: auto;
+    } /* img */
+    .testemonial-content{
+      .testimony{
+        font-weight: 600;
+        line-height: 25px;
+        font-style: italic;
+        margin-bottom: 10%;
+      } /* .testimony */
+      .client {
+        font-style: italic;
+        font-weight: normal;
+      } /*.client */
+      .location{
+        color: #777;
+      } /* .location */
+    } /* .testemonial-content */
+  } /* .testimonials-slide */
+  }

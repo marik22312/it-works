@@ -115,6 +115,10 @@ header {
               display: block;
               background-color: $donutSprinkleDrk;
               margin-top: 0;
+              &:hover, &:focus {
+                background-color: $donutSprinkleDrk;
+                border: none;
+              }
               &:last-child{
                 background-color: $blueBerrySlushDrk;
                 font-weight: normal;
